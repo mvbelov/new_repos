@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for product in products %}
+        <h4>
+            {{ product.name }}
+            {{ product.description }}
+            {{ product.price }}
+            {{ product.stock }}
+            <img src="{% url 'corzina:get_product' product.image %}" alt="">
+        </h4>
+    {% endfor %}
+</body>
+</html>

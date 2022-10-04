@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for category in categories %}
+    <h4>
+        <a href="{% url'corzina:get_product' category.slug %}">{{ category.name }}</a>
+    </h4>
+{% endfor %}
+</body>
+</html>

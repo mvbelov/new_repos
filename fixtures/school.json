@@ -1,0 +1,11 @@
+[
+  {
+    "model": "school.schoolperson",
+    "pk": 1,
+    "fields": {
+      "name": "Maxim",
+      "age": 37,
+      "email": "b.max@mail.ru"
+    }
+  }
+]

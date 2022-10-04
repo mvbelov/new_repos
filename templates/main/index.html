@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="header">
+
+    <div class="header_logo">
+        <img src="{% static 'img/logo_1.png' %}" alt="">
+    </div>
+    <div class="header_social">
+        <img src="{% static 'img/vk.png' %}" alt="Vk" id="Nik">
+        <img src="{% static 'img/telega.png' %}" alt="Telegramm">
+        <img src="{% static 'img/viber.png' %}" alt="Viber">
+    </div>
+    <div class="header_contacts">
+        <p>
+            <strong style="color: blue">A1 :</strong> +375-29-111-22-33
+        </p>
+        <p>
+            <strong class="mts">MTC :</strong>+375-33-222-33-44
+        </p>
+        <p>
+            <strong>Life :</strong>+375-25-333-44-55
+        </p>
+
+    </div>
+
+</div>
+<nav style="margin: 5px">
+    <a href="{% url 'main:index' %}" class="nav_a">ALL</a>
+    {% for c  in categories %}
+        <a href="{% url 'main:get_category' c.id %}" class="nav_a">{{ c.title }}</a>
+    {% endfor %}
+</nav>
+<main class="main">
+{% for p in products %}
+    <div class="item_card">
+        <img src="{{ p.image.url }}" alt="" style="width: 200px; height: 200px;">
+    <p>{{ p.title }}</p>
+    <p>Цена: {{ p.price }}</p>
+    <p>Описание: {{ p.description}}</p>
+
+
+    </div>
+    {% endfor %}
+</main>
+
+<script src="{% static 'js/1.js' %}"></script>
+</body>
+</html>

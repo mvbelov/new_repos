@@ -1,0 +1,77 @@
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    /*border: 1px solid red;*/
+    background: yellow;
+}
+
+.header_logo {
+    height: 198px;
+    width: 20%;
+
+    /*border: 1px solid red;*/
+}
+
+.header_logo img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.header_social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 198px;
+    width: 20%;
+}
+#Nik{
+    border: 5px solid black;
+}
+.header_social img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header_contacts {
+    height: 198px;
+    width: 20%;
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+.header_contacts p{
+    padding: 10px;
+    color: red;
+}
+.mts{
+    color: yellowgreen;
+}
+.main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.item_card{
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 20px;
+    background: blanchedalmond;
+}
+.nav_a{
+    margin-top:5px;
+    text-decoration: none;
+    color: red;padding: 5px;
+    background: #3244f8;
+}
+.nav_a:hover{
+    background: red;
+    color: yellow;
+
+
+}

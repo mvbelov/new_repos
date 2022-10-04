@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Люди</title>
+</head>
+<body>
+    {% for i in person %}
+        <p style="border: 1px solid red;">name: {{ i.name }}  surname: {{ i.surname }} email: {{ i.email }}</p>
+
+    {% endfor %}
+</body>
+</html>
